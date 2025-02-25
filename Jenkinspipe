@@ -1,0 +1,25 @@
+pipeline
+{
+ agent any
+stages{
+stage('clone')
+{
+steps{
+ git "https://github.com/Akhil0805-lab/jenkins_Pipeline.git"
+}
+}
+stage('build')
+{
+
+ steps{
+sh 'javac Hello.java'
+}
+}
+stage('run')
+{
+ steps{
+sh 'javac Hello.java'
+}
+}
+}
+}
